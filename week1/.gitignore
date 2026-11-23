@@ -1,0 +1,12 @@
+*.o
+*.d
+*.axf
+*.elf
+*.uvoptx
+*.uvgui*
+*.bak
+*.dep
+Listings/
+Objects/
+MDK-ARM/**/Debug/
+MDK-ARM/**/Release/
