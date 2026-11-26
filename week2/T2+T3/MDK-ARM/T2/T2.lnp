@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"t2\startup_stm32f103xb.o"
+"t2\main.o"
+"t2\gpio.o"
+"t2\adc.o"
+"t2\tim.o"
+"t2\stm32f1xx_it.o"
+"t2\stm32f1xx_hal_msp.o"
+"t2\stm32f1xx_hal_gpio_ex.o"
+"t2\stm32f1xx_hal_adc.o"
+"t2\stm32f1xx_hal_adc_ex.o"
+"t2\stm32f1xx_hal.o"
+"t2\stm32f1xx_hal_rcc.o"
+"t2\stm32f1xx_hal_rcc_ex.o"
+"t2\stm32f1xx_hal_gpio.o"
+"t2\stm32f1xx_hal_dma.o"
+"t2\stm32f1xx_hal_cortex.o"
+"t2\stm32f1xx_hal_pwr.o"
+"t2\stm32f1xx_hal_flash.o"
+"t2\stm32f1xx_hal_flash_ex.o"
+"t2\stm32f1xx_hal_exti.o"
+"t2\stm32f1xx_hal_tim.o"
+"t2\stm32f1xx_hal_tim_ex.o"
+"t2\system_stm32f1xx.o"
+--strict --scatter "T2\T2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "T2.map" -o T2\T2.axf
